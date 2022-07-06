@@ -1,0 +1,14 @@
+footer {
+  padding: 50px 0;
+
+  .nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 124.5%;
+    color: #2c506b;
+    padding: 8px 0;
+    &:hover {
+      color: white;
+    }
+  }
+}
