@@ -38,10 +38,18 @@ const Header = () => {
                 </Link>
               </li>
             ))}
+            <li className="nav-item">
+              <button className="lang-switch">FR</button>
+            </li>
+            <li className="call-to-action d-sm-none">
+              <p className="contact-us">
+                <strong>Email us:</strong> <br />
+                contact@visionair.digital
+              </p>
+              <button className="btn-main">Start project</button>
+            </li>
           </ul>
-          <div className="btn-actions">
-            <button>FR</button>
-          </div>
+
           <div
             className={humbugerClsName}
             onClick={hamburgerHandler}

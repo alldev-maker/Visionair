@@ -1,14 +1,16 @@
 header {
+  background-color: white;
   .navbar {
     flex-wrap: nowrap;
-    padding-top: 48px;
+    padding-top: 0;
+    padding-bottom: 0;
     .nav-item {
       flex-shrink: 0;
       @include mq("lg") {
       }
     }
     .nav-link {
-      padding: 12.5px 16px;
+      padding: 26px 12px;
       color: $text;
       font-size: 18px;
       line-height: 28px;
@@ -23,43 +25,72 @@ header {
     &-nav {
       flex-direction: row;
       align-items: center;
-      margin-left: 30px;
+      margin-left: auto;
       @include mq("md", max) {
         display: none;
         &.active {
           display: flex;
           position: absolute;
-          top: 109px;
+          top: 59.95px;
           left: 0px;
-          width: 101vw;
-          height: calc(100vh - 109px);
-          padding-top: 30px;
-          margin-left: -20px;
+          width: 100vw;
+          height: calc(100vh - 59.95px);
+          padding-top: 40px;
+          padding-bottom: 32px;
+          margin-left: -16px;
           background: white;
           flex-direction: column;
           z-index: 99;
           overflow: auto;
           touch-action: none;
+          overflow-y: hidden;
           .nav-item {
-            width: calc(100% - 40px);
+            width: calc(100% - 32px);
             .nav-link {
-              line-height: 31.34px;
-              color: black;
+              font-weight: 300;
+              font-size: 24px;
+              line-height: 36px;
+              color: $text;
+              padding: 0 0 24px;
               &.active {
-                color: red;
-                background-color: white;
+                color: $primary;
               }
             }
           }
         }
       }
     }
-    .btn-actions {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      .btn-start {
-        margin-left: 11px;
+    .lang-switch {
+      border: none;
+      background-color: $primary;
+      width: 36px;
+      height: 36px;
+      color: white;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      border-radius: 50%;
+      margin-left: 28px;
+      @include mq("md", max) {
+        margin-left: 0;
+      }
+    }
+    .call-to-action {
+      margin-top: auto;
+      width: calc(100% - 32px);
+      .contact-us {
+        strong {
+          font-weight: 600;
+        }
+        font-size: 24px;
+        line-height: 28px;
+        opacity: 1;
+      }
+      .btn-main {
+        font-size: 14px;
+        padding: 20px;
+        width: 100%;
+        margin-top: 32px;
       }
     }
     @include mq("md") {
@@ -73,7 +104,8 @@ header {
 // Hamburger Button
 .hamburger {
   position: relative;
-  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
   border-radius: 50%;
   cursor: pointer;
   z-index: 101;
@@ -81,11 +113,11 @@ header {
   span {
     position: relative;
     display: block;
-    width: 30px;
-    height: 3px;
-    margin-bottom: 4px;
-    border-radius: 3px;
-    background: black;
+    width: 24px;
+    height: 1.78px;
+    margin-bottom: 5.33px;
+    border-radius: 12px;
+    background: $text;
     z-index: 1;
     transform-origin: 0px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -103,8 +135,8 @@ header {
 
   &.active span {
     opacity: 1;
-    transform: rotate(45deg) translate(-10px, -17.5px);
-    width: 30px;
+    transform: rotate(45deg) translate(-7.5px, -15px);
+    width: 24px;
     &:first-child {
       opacity: 0;
       transform: rotate(0deg) scale(0, 0);

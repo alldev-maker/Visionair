@@ -1,2 +1,12 @@
 .btn {
+  &-main {
+    background: #ff4c55;
+    border: 1px solid $primary;
+    border-radius: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
 }

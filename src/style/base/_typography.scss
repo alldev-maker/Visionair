@@ -7,46 +7,36 @@ p {
 }
 
 h1 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 72px;
-  letter-spacing: -0.04em;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -0.01em;
   @include mq("lg", max) {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 40px;
+    line-height: 44px;
   }
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  letter-spacing: -0.04em;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
   @include mq("lg", max) {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-h3 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -0.0066em;
-  @include mq("sm", max) {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+    line-height: 28px;
   }
 }
 
 p {
-  font-size: 18px;
-  line-height: 28px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  opacity: 0.6;
   color: $text;
-  @include mq("sm", max) {
-    font-size: 12px;
-    line-height: 15px;
+  @include mq("md", max) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

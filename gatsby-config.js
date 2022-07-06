@@ -1,4 +1,4 @@
-const prismicConfiguration = require("./prismic-configuration")
+// const prismicConfiguration = require("./prismic-configuration")
 
 module.exports = {
   siteMetadata: {
