@@ -4,6 +4,10 @@
   font-family: "Outfit";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -35,7 +39,8 @@ ul {
   }
 }
 
-section {
-  margin-top: 70px;
-  margin-bottom: 70px;
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #d4dbe2;
 }

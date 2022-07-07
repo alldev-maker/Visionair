@@ -1,5 +1,6 @@
 .btn {
-  &-main {
+  &-red {
+    padding: 12px 24px;
     background: #ff4c55;
     border: 1px solid $primary;
     border-radius: 60px;
@@ -8,5 +9,26 @@
     line-height: 20px;
     text-align: center;
     color: #ffffff;
+    flex-shrink: 0;
+    &:hover {
+      color: white;
+    }
+  }
+  &-white {
+    padding: 20px;
+    width: 240px;
+    background: #ffffff;
+    border: 1px solid white;
+    border-radius: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $text;
+    &:hover {
+      color: $primary;
+    }
+    @include mq("sm", max) {
+      width: 100%;
+    }
   }
 }

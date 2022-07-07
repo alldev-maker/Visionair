@@ -1,0 +1,210 @@
+.home-hero {
+  height: 828px;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../images/home-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .hero-title {
+    color: white;
+  }
+  .hero-text {
+    opacity: 1;
+    color: white;
+    margin-top: 64px;
+  }
+  .btn-red {
+    padding: 20px 75px;
+    margin: 64px 0;
+  }
+  @include mq("md", max) {
+    height: 607px;
+    .hero-text {
+      margin-top: 32px;
+    }
+    .btn-red {
+      width: 100%;
+      margin: 32px 0;
+    }
+  }
+}
+
+.deserve-section {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.serving-section {
+  background-color: $text;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  h2,
+  p {
+    color: white;
+  }
+}
+
+.cta-section {
+  position: relative;
+  background-color: $primary;
+  height: 599px;
+  display: flex;
+  align-items: center;
+  @include mq("md", max) {
+    height: 480px;
+  }
+  .container {
+    max-width: 784px;
+  }
+  .content {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 40px;
+    margin-bottom: 54px;
+    opacity: 1;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 328px;
+    height: 599px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: lighten;
+    @include mq("md", max) {
+      width: 110px;
+      height: 480px;
+    }
+  }
+  &::before {
+    left: 0;
+    background-image: url("../images/left-back.png");
+  }
+  &::after {
+    content: "";
+    right: 0;
+    background-image: url("../images/right-back.png");
+  }
+  text-align: center;
+}
+
+.platform-section {
+  padding: 120px 0;
+  h2 {
+    max-width: 784px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 64px;
+    @include mq("sm", max) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.values-section {
+  padding: 120px 0;
+  @include mq("md", max) {
+    padding: 60px 0;
+  }
+  .btn-red {
+    width: 100%;
+    margin-top: 120px;
+    padding: 45px;
+    display: inline-block;
+    font-size: 32px;
+    line-height: 36px;
+    @include mq("md", max) {
+      margin-top: 60px;
+      font-weight: 400;
+      padding: 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .divider {
+    margin: 60px 0;
+  }
+}
+
+.development-item {
+  padding: 40px;
+  border: 1px solid #d4dbe2;
+  border-radius: 32px;
+
+  @include mq("md", max) {
+    margin-bottom: 32px;
+  }
+}
+
+.platform-item {
+  padding: 60px 32px 80px;
+  background: #f5f6f7;
+  border-bottom: 16px solid #39394c;
+  border-radius: 16px;
+  height: 520px;
+  text-align: center;
+  @include mq("lg", max) {
+    margin-bottom: 32px;
+  }
+  .caption {
+    margin-top: 40px;
+    margin-bottom: 22px;
+    text-align: left;
+  }
+  .content {
+    text-align: left;
+    white-space: pre-line;
+  }
+  &__icon {
+    // width: 300px;
+    // height: 77px;
+  }
+  @include mq("sm", max) {
+    height: 396px;
+  }
+}
+
+.value-item {
+  max-width: 348px;
+  margin-bottom: 32px;
+  @include mq("md", max) {
+    max-width: 100%;
+  }
+  .caption {
+    margin-bottom: 24px;
+  }
+}
+.value-info {
+  display: flex;
+  align-items: end;
+  @include mq("md", max) {
+    margin-bottom: 32px;
+  }
+  &__number {
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 110px;
+    opacity: 1;
+    @include mq("lg", max) {
+      font-size: 64px;
+      line-height: 50px;
+    }
+  }
+  &__label {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 177px;
+    margin-left: 24px;
+    opacity: 1;
+    @include mq("lg", max) {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 12px;
+    }
+  }
+}

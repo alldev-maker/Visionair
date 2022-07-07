@@ -46,7 +46,7 @@ const Header = () => {
                 <strong>Email us:</strong> <br />
                 contact@visionair.digital
               </p>
-              <button className="btn-main">Start project</button>
+              <button className="btn-red">Start project</button>
             </li>
           </ul>
 

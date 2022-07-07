@@ -40,3 +40,58 @@ p {
     line-height: 20px;
   }
 }
+
+.caption {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  @include mq("md", max) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.red {
+  color: $primary;
+}
+.white {
+  color: white;
+}
+
+.underline {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    width: 100%;
+    height: 8px;
+    border-radius: 30px;
+    background-color: $primary;
+    @include mq("md", max) {
+      height: 4px;
+      width: calc(100vw - 32px);
+      bottom: -12px;
+    }
+  }
+}
+
+.title {
+  position: relative;
+  padding-left: 76px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-image: url("../images/quote.svg");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 48px;
+  }
+}
