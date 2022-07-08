@@ -1,4 +1,5 @@
 import {
+  Activation,
   Benefit1,
   Benefit2,
   Benefit3,
@@ -8,9 +9,11 @@ import {
   Growth1,
   Growth2,
   Growth3,
+  Planning,
   Platform1,
   Platform2,
   Platform3,
+  Strategy,
 } from "./imgImport"
 
 export const nav_menus = [
@@ -20,7 +23,7 @@ export const nav_menus = [
   },
   {
     name: "Our Services",
-    to: "/our-services",
+    to: "/our-service",
   },
   {
     name: "Resources",
@@ -158,3 +161,48 @@ export const cta_data2 = {
   btnName: "I'm contacting Visionair",
   to: "/",
 }
+
+export const services = [
+  {
+    title: "Strategy and discovery",
+    subtitle: "Knowing you to better take action!",
+    description:
+      "Before knowing your objectives and your customers, we get to know your DNA. This is how we spot your differentiating factors compared to your competitors. Then comes the personalized strategic phase, taking into account elements such as :",
+    list: [
+      "An analysis of the best e-commerce practices for conversion",
+      "A thorough understanding of the data for the development of an acquisition strategy",
+      "The establishment of a budget and detailed plan for your new site, replatforming/migration project",
+      "Your customers’ behavior on your Internet site",
+      "Your ecommerce site’s technical and functional audit (UX)",
+      "The creation of a roadmap after the analysis and prioritization of your needs",
+    ],
+    img: Strategy,
+  },
+  {
+    title: "Execution and development",
+    subtitle: "Planning is good, making a difference is better!",
+    description:
+      "The development of your e-commerce depends on the implementation of different levers allowing an acquisition in constant growing :",
+    list: [
+      "A facilitated customer journey (UX & UI)",
+      "A functional and technical architecture",
+      "The front and back-end development of your solutions",
+      "Agile project management, preparation for launch with functional tests",
+      "Regular audits for continuous optimization",
+    ],
+    img: Planning,
+  },
+  {
+    title: "Activation ",
+    subtitle: "Always keep in mind your long-term goals!",
+    description:
+      "A data-driven marketing approach on each step of the purchase journey enable the growth of the your e-commerce site in the best ways. Our digital marketing pillars below allow you to move from project to long-term growth",
+    list: [
+      "A/B testing and personalisation",
+      "Campaign management",
+      "Email and segmentation",
+      "Content strategy",
+    ],
+    img: Activation,
+  },
+]

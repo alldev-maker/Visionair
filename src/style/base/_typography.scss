@@ -95,3 +95,12 @@ p {
     height: 48px;
   }
 }
+
+.hero-text {
+  opacity: 1;
+  color: white;
+  margin-top: 64px;
+  @include mq(sm, max) {
+    margin-top: 32px;
+  }
+}

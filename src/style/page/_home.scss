@@ -8,11 +8,7 @@
   .hero-title {
     color: white;
   }
-  .hero-text {
-    opacity: 1;
-    color: white;
-    margin-top: 64px;
-  }
+
   .btn-red {
     padding: 20px 75px;
     margin: 64px 0;
@@ -63,6 +59,10 @@
     margin-top: 40px;
     margin-bottom: 54px;
     opacity: 1;
+    @include mq(sm, max) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   &::before,
   &::after {

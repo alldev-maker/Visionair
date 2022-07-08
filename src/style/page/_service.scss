@@ -1,0 +1,51 @@
+.our-services {
+  background-color: $text;
+  padding-top: 220px;
+  padding-bottom: 220px;
+  @include mq(md, max) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  h1,
+  p {
+    color: white;
+    text-align: center;
+  }
+  .underline::before {
+    bottom: -5px;
+    @include mq("lg", max) {
+      bottom: -12px;
+      border-radius: 12px;
+      height: 4px;
+      width: 100%;
+    }
+  }
+  .content {
+    margin-top: 32px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    @include mq(md, max) {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .container {
+    max-width: 848px;
+  }
+}
+
+.service-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  &.black {
+    background-color: $text;
+  }
+  @include mq(lg, max) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

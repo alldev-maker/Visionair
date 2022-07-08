@@ -1,6 +1,9 @@
 import logo from "../images/logo.svg"
 import footerLogo from "../images/footer-logo.svg"
 
+import aboutHero from "../images/about-hero.jpg"
+import serviceHero from "../images/support.png"
+
 import deserve1 from "../images/deserve1.svg"
 import deserve2 from "../images/deserve2.svg"
 import deserve3 from "../images/deserve3.svg"
@@ -14,6 +17,13 @@ import benefit3 from "../images/benefit3.svg"
 import platform1 from "../images/platform1.png"
 import platform2 from "../images/platform2.png"
 import platform3 from "../images/platform3.png"
+
+import strategy from "../images/strategy.png"
+import planning from "../images/planning.png"
+import activation from "../images/activation.png"
+import touch from "../images/touch.png"
+
+import checkIcon from "../images/check.svg"
 
 export const Platform1 = platform1
 export const Platform2 = platform2
@@ -31,3 +41,13 @@ export const Benefit3 = benefit3
 
 export const Logo = logo
 export const FooterLogo = footerLogo
+
+export const AboutHero = aboutHero
+export const ServiceHero = serviceHero
+
+export const Strategy = strategy
+export const Planning = planning
+export const Activation = activation
+export const Touch = touch
+
+export const CheckIcon = checkIcon
