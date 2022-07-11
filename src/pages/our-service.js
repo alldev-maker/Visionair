@@ -1,7 +1,8 @@
 import React from "react"
+import DevelopmentItem from "../components/common/development-item"
 import Layout from "../components/layout"
-import { CheckIcon, ServiceHero } from "../utils/imgImport"
-import { services } from "../utils/staticData"
+import { CheckIcon, ServiceHero, Touch } from "../utils/imgImport"
+import { benefits, services } from "../utils/staticData"
 
 const AboutUs = () => (
   <Layout>
@@ -43,19 +44,17 @@ const AboutUs = () => (
         key={idx}
       >
         <div className="container">
-          <div
-            className={`row ${(idx + 1) % 2 === 0 ? "flex-row-reverse" : ""}`}
-          >
-            <div className="col-md-6">
+          <div className={`service ${(idx + 1) % 2 === 0 ? "reverse" : ""}`}>
+            <div className="left">
               <img className="service-img" src={service.img} alt="service" />
             </div>
-            <div className="col-md-6">
+            <div className="right">
               <h2 className="title">{service.title}</h2>
               <h3 className="subtitle">{service.subtitle}</h3>
               <p className="description">{service.description}</p>
               <ul>
                 {service.list.map((item, idx) => (
-                  <li key={idx}>
+                  <li className="service-item" key={idx}>
                     <img src={CheckIcon} alt="check icon" />
                     <p>{item}</p>
                   </li>
@@ -66,6 +65,49 @@ const AboutUs = () => (
         </div>
       </section>
     ))}
+    <section className="service-section">
+      <div className="container">
+        <div className="service touch">
+          <div className="right">
+            <h2 className="title-underline">Visionair's touch</h2>
+            <h3 className="subtitle">
+              Visionair, the co-pilot of your digital business
+            </h3>
+            <p className="description">
+              For several years, we have been supporting e-commerce sites in
+              their deployment. Our team is composed of multidisciplinary
+              experts whose mastery in terms of UI, UX, marketing and data has
+              enabled us to carry out projects on an international scale. As a
+              partner or within Visionair, our talents work together e-commerce
+              take off and support you towards your new challenges.
+            </p>
+            <button className="btn-red mt-3 mb-5">Learn More</button>
+          </div>
+          <div className="left">
+            <img className="service-img" src={Touch} alt="service" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="benefits-section">
+      <div className="container">
+        <div className="row">
+          {benefits.map((item, idx) => (
+            <div
+              className="col-md-4 d-flex flex-column justify-content-between"
+              key={idx}
+            >
+              <h2 className="benefit-title">{item.title}</h2>
+              <DevelopmentItem data={item} />
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-5">
+          <button className="btn-red">I want to know more</button>
+        </div>
+      </div>
+    </section>
   </Layout>
 )
 

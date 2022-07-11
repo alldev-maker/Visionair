@@ -94,6 +94,14 @@ p {
     width: 60px;
     height: 48px;
   }
+  @include mq(md, max) {
+    padding-left: 45px;
+    &::before {
+      width: 30px;
+      height: 24px;
+      background-image: url("../images/quote_mob.svg");
+    }
+  }
 }
 
 .hero-text {

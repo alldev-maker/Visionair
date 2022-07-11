@@ -46,7 +46,9 @@ const IndexPage = () => (
       </div>
       <div className="row">
         {deserves.map((item, idx) => (
-          <DevelopmentItem data={item} key={idx} />
+          <div className="col-md-4" key={idx}>
+            <DevelopmentItem data={item} />
+          </div>
         ))}
       </div>
     </section>
@@ -76,7 +78,9 @@ const IndexPage = () => (
         </div>
         <div className="row">
           {servings.map((item, idx) => (
-            <DevelopmentItem data={item} key={idx} />
+            <div className="col-md-4" key={idx}>
+              <DevelopmentItem data={item} />
+            </div>
           ))}
         </div>
       </div>

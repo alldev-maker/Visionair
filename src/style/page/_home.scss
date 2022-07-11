@@ -136,6 +136,11 @@
 
   @include mq("md", max) {
     margin-bottom: 32px;
+    padding: 24px;
+    .icon {
+      width: 64px;
+      height: 64px;
+    }
   }
 }
 

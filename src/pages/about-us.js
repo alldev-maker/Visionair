@@ -93,7 +93,9 @@ const AboutUs = () => (
       <h2 className="title mb-5 pb-3">Our team of experts :</h2>
       <div className="row">
         {servings.map((item, idx) => (
-          <DevelopmentItem data={item} key={idx} />
+          <div className="col-md-4" key={idx}>
+            <DevelopmentItem data={item} />
+          </div>
         ))}
       </div>
       <div className="d-flex align-items-center justify-content-between py-5">

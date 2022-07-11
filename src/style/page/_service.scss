@@ -41,11 +41,122 @@
   padding-bottom: 80px;
   margin-top: 32px;
   margin-bottom: 32px;
+  .service {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &-img {
+      border-radius: 32px;
+    }
+    .right {
+      max-width: 584px;
+      .title {
+        margin-bottom: 32px;
+      }
+      .title-underline {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -0.01em;
+        position: relative;
+        margin-bottom: 55px;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -24px;
+          width: 227px;
+          height: 8px;
+          background-color: $primary;
+          border-radius: 12px;
+        }
+        @include mq(lg, max) {
+          font-size: 40px;
+          line-height: 44px;
+          &::before {
+            width: 100%;
+            height: 4px;
+          }
+        }
+      }
+      .description {
+        margin: 40px 0;
+      }
+      .service-item {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 10px;
+        img {
+          margin-right: 16px;
+        }
+      }
+    }
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+    &.touch {
+      @include mq(lg, max) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
   &.black {
     background-color: $text;
+    .title,
+    .subtitle,
+    .description,
+    p {
+      color: white;
+    }
+  }
+  @include mq(md, max) {
+    .title {
+      margin-bottom: 16px;
+    }
+    .description {
+      margin: 32px 0;
+    }
+    .service-img {
+      width: 100%;
+      height: 468px;
+    }
+    .btn-red {
+      width: 100%;
+    }
   }
   @include mq(lg, max) {
     padding-top: 30px;
     padding-bottom: 30px;
+    .right {
+      margin-top: 40px;
+    }
+  }
+}
+
+.benefits-section {
+  padding-bottom: 120px;
+  .benefit-title {
+    margin-bottom: 40px;
+  }
+  .development-item {
+    height: 416px;
+  }
+  @include mq(md, max) {
+    .benefit-title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    .development-item {
+      height: 296px;
+    }
+    .btn-red {
+      width: 100%;
+    }
+  }
+  @include mq(lg, max) {
+    padding-bottom: 60px;
   }
 }
