@@ -2,9 +2,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Patrimore`,
-    description: `Un plan para lograr tus sueños`,
-    author: `Juan`,
+    title: `Visionair`,
+    description: `Visionair`,
+    author: `Gabriel`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
