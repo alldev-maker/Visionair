@@ -19,7 +19,7 @@ const Header = () => {
   }
 
   return (
-    <header>
+    <header id="header">
       <div className="container">
         <nav className="navbar">
           <Link to="/">

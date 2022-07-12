@@ -24,6 +24,7 @@ import activation from "../images/activation.png"
 import touch from "../images/touch.png"
 
 import checkIcon from "../images/check.svg"
+import leftArrow from "../images/left_arrow.svg"
 
 import contactHero from "../images/contact-hero.png"
 
@@ -53,5 +54,6 @@ export const Activation = activation
 export const Touch = touch
 
 export const CheckIcon = checkIcon
+export const LeftArrow = leftArrow
 
 export const ContactHero = contactHero
