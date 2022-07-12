@@ -1,4 +1,4 @@
-// const prismicConfiguration = require("./prismic-configuration")
+const prismicConfiguration = require("./prismic-configuration")
 
 module.exports = {
   siteMetadata: {
@@ -47,16 +47,17 @@ module.exports = {
         display: "swap",
       },
     },
-    // {
-    //   resolve: "gatsby-source-prismic",
-    //   options: {
-    //     repositoryName: prismicConfiguration.prismicRepo,
-    //     accessToken: process.env.PRISMIC_ACCESS_TOKEN,
-    //     linkResolver: require("./src/utils/linkResolver").linkResolver,
-    //     schemas: {
-    //       blog_post: require("./custom_types/blog_post.json"),
-    //     },
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-prismic",
+      options: {
+        repositoryName: prismicConfiguration.prismicRepo,
+        accessToken: process.env.PRISMIC_ACCESS_TOKEN,
+        linkResolver: require("./src/utils/linkResolver").linkResolver,
+        schemas: {
+          resource: require("./custom_types/resource.json"),
+          tag: require("./custom_types/tag.json"),
+        },
+      },
+    },
   ],
 }

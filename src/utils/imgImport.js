@@ -25,6 +25,8 @@ import touch from "../images/touch.png"
 
 import checkIcon from "../images/check.svg"
 
+import contactHero from "../images/contact-hero.png"
+
 export const Platform1 = platform1
 export const Platform2 = platform2
 export const Platform3 = platform3
@@ -51,3 +53,5 @@ export const Activation = activation
 export const Touch = touch
 
 export const CheckIcon = checkIcon
+
+export const ContactHero = contactHero

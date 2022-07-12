@@ -1,7 +1,6 @@
 header {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
-  backdrop-filter: blur(54px);
   .navbar {
     flex-wrap: nowrap;
     padding-top: 0;
@@ -36,11 +35,11 @@ header {
           top: 59.95px;
           left: 0px;
           width: 100vw;
-          height: calc(100vh - 59.95px);
+          height: calc(100vh - 59px);
           padding-top: 40px;
           padding-bottom: 32px;
           margin-left: -16px;
-          background: white;
+          background: #f5f5f5;
           flex-direction: column;
           z-index: 99;
           overflow: auto;

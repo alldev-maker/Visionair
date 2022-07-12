@@ -1,0 +1,40 @@
+.not-found {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &__title {
+    font-weight: 700;
+    font-size: 492px;
+    line-height: 492px;
+    letter-spacing: -0.14em;
+    opacity: 0.6;
+    color: white;
+    text-shadow: -1px -1px 0 #39394c, 1px -1px 0 #39394c, -1px 1px 0 #39394c,
+      1px 1px 0 #39394c;
+    @include mq("lg", max) {
+      font-size: 123px;
+      line-height: 100px;
+    }
+  }
+  &__label {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #39394c;
+    margin: 16px 0;
+    opacity: 1;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    opacity: 1;
+  }
+  &__link {
+    text-decoration: underline;
+    color: $primary;
+    &:hover {
+      color: $primary;
+    }
+  }
+}

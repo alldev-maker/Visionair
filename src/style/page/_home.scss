@@ -163,10 +163,6 @@
     text-align: left;
     white-space: pre-line;
   }
-  &__icon {
-    // width: 300px;
-    // height: 77px;
-  }
   @include mq("sm", max) {
     height: 396px;
   }

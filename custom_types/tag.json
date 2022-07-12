@@ -1,0 +1,11 @@
+{
+  "Main": {
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "Name",
+        "placeholder": "Tag Name"
+      }
+    }
+  }
+}

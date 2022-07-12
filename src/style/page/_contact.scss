@@ -1,0 +1,78 @@
+.contact-section {
+  padding-top: 40px;
+  padding-bottom: 120px;
+  .subtitle {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: 0.6;
+  }
+  .contact-hero__img {
+    width: 100%;
+    border-radius: 32px;
+  }
+  @include mq("md", max) {
+    padding-bottom: 60px;
+  }
+}
+
+.contact-form {
+  max-width: 440px;
+  @include mq(lg, max) {
+    max-width: 100%;
+  }
+  .form-group {
+    margin-bottom: 32px;
+    @include mq(md, max) {
+      margin-bottom: 16px;
+    }
+  }
+  .form-control {
+    width: 100%;
+    border: 1px solid #d4dbe2;
+    border-radius: 12px;
+    padding: 14px 12px;
+    resize: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:focus {
+      border: 1px solid $text;
+      outline: none;
+      box-shadow: none;
+    }
+    &::placeholder {
+      color: #39394c;
+      opacity: 0.3;
+    }
+  }
+
+  .error {
+    border: 1px solid $primary !important;
+  }
+  .errorsapn {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+    color: $primary;
+    margin-top: 4px;
+  }
+  .text-area {
+    height: 148px;
+    @include mq("md", max) {
+      height: 160px;
+    }
+  }
+  .btn-red {
+    width: 100%;
+    padding: 20px;
+    @include mq("md", max) {
+      padding: 12px 24px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
